@@ -21,6 +21,8 @@ html, body {
   --content-right-padding: 60px;
 
   --footer-column-hoverover-color: #0b4e82;
+  --footer-link-top-bottom-padding: 5px;
+  --footer-link-left-right-padding: 10px;
 }
 
 a:not(.unstyled) {
@@ -245,8 +247,21 @@ a:not(.unstyled):hover {
   font-weight: bold;
 }
 
+.footer-section-title:not(.no-indent) {
+  padding-left: var(--footer-link-left-right-padding);
+}
+
 .footer-link-text {
   font-size: var(--submenu-font-size);
+  margin: 0px;
+  padding-top: var(--footer-link-top-bottom-padding);
+  padding-left: var(--footer-link-left-right-padding);
+  padding-right: var(--footer-link-left-right-padding);
+  padding-bottom: var(--footer-link-top-bottom-padding);
+}
+
+.footer-link-text:hover {
+  background-color: var(--topbar-hoverover-color);
 }
 
 .footer-link {
@@ -254,10 +269,6 @@ a:not(.unstyled):hover {
   color: white;
 }
 
-.footer-link:hover {
-  font-weight: bold;
-  text-decoration: underline;
-}
 
 .footer-text {
   margin: 0px;
